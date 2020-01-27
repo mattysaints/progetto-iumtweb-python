@@ -4,7 +4,7 @@ import sys
 import subprocess
 
 from header import *
-
+from menu import mainMenu
 
 def draw_grid(screen):
     screen.fill(black)
@@ -93,7 +93,6 @@ def render_winner(screen, winner):
         text = font.render("'X' player wins!", True, blue, black)
     else:
         text = font.render("'O' player wins!", True, red, black)
-
     text_rect = text.get_rect()
     text_rect.center = (width // 2, height // 2)
     screen.fill(black)
@@ -139,9 +138,10 @@ def main():
             time.sleep(2)
 
             render_winner(screen, winner)
+            #ritorna al menu
             pygame.display.update()
             time.sleep(3)
-            sys.exit()
+            mainMenu()
 
         pygame.display.update()
         clock.tick(10)

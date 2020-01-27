@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="759886c6-ae03-4437-bad2-4bf1e38ca50a" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="759886c6-ae03-4437-bad2-4bf1e38ca50a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/TicTacToe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TicTacToe.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,31 +21,49 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1SsMEtChpEkl0qEVZBE8tjIyvUo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/pygame-menu-master" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Python.menu">
+    <configuration name="game_selector" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TicTacToe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/pygame-menu-master/pygame-menu-master/pygameMenu/examples" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/pygame-menu-master/pygame-menu-master/pygameMenu/examples/game_selector.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TicTacToe" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,6 +112,7 @@
       <list>
         <item itemvalue="Python.menu" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.game_selector" />
       </list>
     </recent_temporary>
   </component>
@@ -108,5 +132,47 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579968050639">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579968050639" />
+    <state x="686" y="162" key="#main" timestamp="1579966451828">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="162" key="#main/0.0.1920.1040@0.0.1920.1040" timestamp="1579966451828" />
+    <state x="203" y="294" key="FileChooserDialogImpl" timestamp="1580050675239">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="203" y="294" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580050675239" />
+    <state x="0" y="0" key="GitCloneDialog" timestamp="1580050289848">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" key="GitCloneDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580050289848" />
+    <state width="1899" height="26" key="GridCell.Tab.0.bottom" timestamp="1580136311014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="26" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580136311014" />
+    <state width="1899" height="26" key="GridCell.Tab.0.center" timestamp="1580136311014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="26" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580136311014" />
+    <state width="1899" height="26" key="GridCell.Tab.0.left" timestamp="1580136311014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="26" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580136311014" />
+    <state width="1899" height="26" key="GridCell.Tab.0.right" timestamp="1580136311014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="26" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580136311014" />
+    <state x="618" y="168" key="SettingsEditor" timestamp="1579968397974">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="618" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579968397974" />
+    <state x="668" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1580135321396">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580135321396" />
   </component>
 </project>

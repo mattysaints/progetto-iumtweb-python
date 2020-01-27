@@ -5,7 +5,7 @@ import subprocess
 from header import *
 
 
-def main():
+def mainMenu():
     pygame.init()
     screen = pygame.display.set_mode(size)
     pygame.mouse.set_cursor(*pygame.cursors.ball)
@@ -69,4 +69,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    mainMenu()
