@@ -136,6 +136,52 @@ def main():
             pygame.draw.line(screen, green, start, end, gThickness)
             pygame.display.update()
             time.sleep(2)
+            render_winner(screen, winner)
+            pygame.display.update()
+            time.sleep(3)
+            # ritorna al menu
+            mainMenu()
+
+        pygame.display.update()
+        clock.tick(10)
+
+
+def singleplayer():
+
+    print("Parameter main: " + str(sys.argv))
+
+    pygame.init()
+    screen = pygame.display.set_mode(size)
+    pygame.mouse.set_cursor(*pygame.cursors.ball)
+    pygame.display.set_caption('Tic Tac Toe')
+    clock = pygame.time.Clock()
+    grid = list(range(0, len(cells)))
+    turn = 0
+
+    while 1:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                sys.exit()
+            elif turn == 0 :
+                for i in range(0, len(cells)):
+                    if 'o' != grid[cell_index] != 'x' :
+                        grid[i] = 'o'
+                        draw_circle(screen, *cells[i])
+                turn = turn + 1
+            else:
+                cell_index = get_cell(*pygame.mouse.get_pos())
+                if 'o' != grid[cell_index] != 'x':
+                    grid[cell_index] = 'x'
+                for i in range(0, len(cells)):
+                    if grid[i] == 'x':
+                     draw_cross(screen, *cells[i])
+                turn = turn - 1
+
+        victory, winner, start, end = check_victory(grid)
+        if victory:
+            pygame.draw.line(screen, green, start, end, gThickness)
+            pygame.display.update()
+            time.sleep(2)
 
             render_winner(screen, winner)
             #ritorna al menu

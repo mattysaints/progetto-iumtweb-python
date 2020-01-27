@@ -12,7 +12,7 @@ def mainMenu():
     pygame.display.set_caption('Tic Tac Toe')
     clock = pygame.time.Clock()
 
-    txt_title = pygame.font.Font('freesansbold.ttf', 50).render("TIC TAC TOE", True, white)
+    txt_title = pygame.font.Font('freesansbold.ttf', 50).render("TIC TAC TOE", True, red)
     font = pygame.font.Font('freesansbold.ttf', 32)
     txt_singlepl, txt_singlepl_hl = font.render("Single player", True, white), font.render("Single player", True, green)
     txt_twopl, txt_twopl_hl = font.render("1 vs 1", True, white), font.render("1 vs 1", True, green)
@@ -37,13 +37,13 @@ def mainMenu():
                 sys.exit()
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 pos = pygame.mouse.get_pos()
-                if rect_singlepl_hl.collidepoint(pos):
+                if rect_singlepl_hl.collidepoint(pos): #Singleplayer
                     pygame.display.quit()
                     subprocess.call(["python","main.py","1"])
                     pygame.display.set_mode(size)
-                elif rect_twopl_hl.collidepoint(pos):
+                elif rect_twopl_hl.collidepoint(pos): #1 vs 1
                     pygame.display.quit()
-                    subprocess.call(["python","main.py","0"])
+                    subprocess.call(["python","main.py","0"]) #Exit
                     pygame.display.set_mode(size)
                 elif rect_exit_hl.collidepoint(pos):
                     sys.exit()
