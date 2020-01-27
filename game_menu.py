@@ -1,12 +1,14 @@
 import pygame
 import sys
+import os
 import subprocess
 
-from header import *
-from main import *
+from game_header import *
+from game_main import *
 
 
-def mainMenu():
+def main_menu():
+    os.environ['SDL_VIDEO_CENTERED'] = '1'
     pygame.init()
     screen = pygame.display.set_mode(size)
     pygame.mouse.set_cursor(*pygame.cursors.ball)
@@ -24,13 +26,13 @@ def mainMenu():
     rect_twopl, rect_twopl_hl = txt_twopl.get_rect(), txt_twopl_hl.get_rect()
     rect_exit, rect_exit_hl = txt_exit.get_rect(), txt_exit_hl.get_rect()
 
-    rect_title.center = (width // 2, height // 2 - 60)
-    rect_singlepl.center = (width // 2, height // 2)
-    rect_singlepl_hl.center = (width // 2, height // 2 - 1)
-    rect_twopl.center = (width // 2, height // 2 + 40)
-    rect_twopl_hl.center = (width // 2, height // 2 + 39)
-    rect_exit.center = (width // 2, height // 2 + 80)
-    rect_exit_hl.center = (width // 2, height // 2 + 79)
+    rect_title.center = (screen_width // 2, screen_height // 2 - 60)
+    rect_singlepl.center = (screen_width // 2, screen_height // 2)
+    rect_singlepl_hl.center = (screen_width // 2, screen_height // 2 - 1)
+    rect_twopl.center = (screen_width // 2, screen_height // 2 + 40)
+    rect_twopl_hl.center = (screen_width // 2, screen_height // 2 + 39)
+    rect_exit.center = (screen_width // 2, screen_height // 2 + 80)
+    rect_exit_hl.center = (screen_width // 2, screen_height // 2 + 79)
 
     while 1:
         for event in pygame.event.get():
@@ -38,17 +40,11 @@ def mainMenu():
                 sys.exit()
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 pos = pygame.mouse.get_pos()
-                if rect_singlepl_hl.collidepoint(pos): #Singleplayer
-                    pygame.display.quit()
-                    #subprocess.call(["python","main.py","1"])
-                    singleplayer()
-                    pygame.display.set_mode(size)
-                elif rect_twopl_hl.collidepoint(pos): #1 vs 1
-                    pygame.display.quit()
-                    #subprocess.call(["python","main.py","0"])
-                    main()
-                    pygame.display.set_mode(size)
-                elif rect_exit_hl.collidepoint(pos): #Exit
+                if rect_singlepl_hl.collidepoint(pos):
+                    singleplayer(screen)  # modalità singleplayer
+                elif rect_twopl_hl.collidepoint(pos):
+                    versus(screen)  # modalità 1 vs 1
+                elif rect_exit_hl.collidepoint(pos):  # esce dal gioco
                     sys.exit()
 
         screen.fill(black)
@@ -72,4 +68,4 @@ def mainMenu():
 
 
 if __name__ == "__main__":
-    mainMenu()
+    main_menu()
