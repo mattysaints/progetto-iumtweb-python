@@ -3,6 +3,7 @@ import sys
 import subprocess
 
 from header import *
+from main import *
 
 
 def mainMenu():
@@ -39,13 +40,15 @@ def mainMenu():
                 pos = pygame.mouse.get_pos()
                 if rect_singlepl_hl.collidepoint(pos): #Singleplayer
                     pygame.display.quit()
-                    subprocess.call(["python","main.py","1"])
+                    #subprocess.call(["python","main.py","1"])
+                    singleplayer()
                     pygame.display.set_mode(size)
                 elif rect_twopl_hl.collidepoint(pos): #1 vs 1
                     pygame.display.quit()
-                    subprocess.call(["python","main.py","0"]) #Exit
+                    #subprocess.call(["python","main.py","0"])
+                    main()
                     pygame.display.set_mode(size)
-                elif rect_exit_hl.collidepoint(pos):
+                elif rect_exit_hl.collidepoint(pos): #Exit
                     sys.exit()
 
         screen.fill(black)

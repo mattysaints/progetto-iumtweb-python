@@ -158,24 +158,29 @@ def singleplayer():
     grid = list(range(0, len(cells)))
     turn = 0
 
+    draw_grid(screen)
+
     while 1:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
             elif turn == 0 :
                 for i in range(0, len(cells)):
-                    if 'o' != grid[cell_index] != 'x' :
+                    if 'o' != grid[i] != 'x' :
                         grid[i] = 'o'
                         draw_circle(screen, *cells[i])
+                        break
                 turn = turn + 1
-            else:
+            elif event.type == pygame.MOUSEBUTTONDOWN:
                 cell_index = get_cell(*pygame.mouse.get_pos())
                 if 'o' != grid[cell_index] != 'x':
                     grid[cell_index] = 'x'
                 for i in range(0, len(cells)):
                     if grid[i] == 'x':
                      draw_cross(screen, *cells[i])
+                     break
                 turn = turn - 1
+
 
         victory, winner, start, end = check_victory(grid)
         if victory:
