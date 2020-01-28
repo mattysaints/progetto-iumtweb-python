@@ -161,14 +161,6 @@ def singleplayer(screen):
                     grid[cell_index] = 'x'
                 turn = (turn + 1) % 2
 
-        if turn == 0:
-            turn = (turn + 1) % 2
-            while 1:
-                cpu_cell = random.randint(0, len(grid) - 1)
-                if 'o' != grid[cpu_cell] != 'x':
-                    grid[cpu_cell] = 'o'
-                    break
-
         draw_grid(screen)
 
         for i in range(0, len(cells)):
@@ -186,6 +178,14 @@ def singleplayer(screen):
             pygame.display.update()
             time.sleep(3)
             return  # ritorna al menu
+
+        if turn == 0:
+            turn = (turn + 1) % 2
+            while 1:
+                cpu_cell = random.randint(0, len(grid) - 1)
+                if 'o' != grid[cpu_cell] != 'x':
+                    grid[cpu_cell] = 'o'
+                    break
 
         pygame.display.update()
         clock.tick(10)
